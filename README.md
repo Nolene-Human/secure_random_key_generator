@@ -1,2 +1,4 @@
 # random_key
-Random Key Generator
+Random key generator used for One time passcode or generating random string.
+
+
