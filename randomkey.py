@@ -1,4 +1,8 @@
 import random
+import string
+import time
+
+list=["12"]
 
 def generate_key():
     
@@ -9,12 +13,12 @@ def generate_key():
         'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
     ]
     numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-    symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
+    symbol2=string.punctuation
     
-    nr_letters = 2
+    nr_letters = 4
     nr_symbols = 2
-    nr_numbers = 5
+    nr_numbers = 2
 
     password = []
 
@@ -29,16 +33,43 @@ def generate_key():
         nr_numbers -= 1
 
     while nr_symbols > 0:
-        pass_sym = random.choice(symbols)
+        pass_sym = random.choice(symbol2)
         password.append(pass_sym)
         nr_symbols -= 1
-
 
     random.shuffle(password)
     return("".join(password))
 
-print (generate_key())
-print (generate_key())
-print (generate_key())
-print (generate_key())
-print (generate_key())
+
+
+
+def check_duplicate():
+         
+    key=generate_key()
+    #key="12"
+    for l in list:
+        if l == key:
+            print("key exist program exited")
+            exit()
+    else:
+        list.append(key)
+
+
+
+check_duplicate()
+time.sleep(5)
+check_duplicate()
+time.sleep(5)
+check_duplicate()
+time.sleep(5)
+check_duplicate()
+
+def frequency_test(sequence):
+    frequency = sequence.count('4')
+    total = len(sequence)
+    return abs(frequency - (total - frequency)) / total
+
+sequence = generate_key()
+print(frequency_test(sequence))
+
+print(list)
