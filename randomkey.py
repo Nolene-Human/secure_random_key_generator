@@ -37,8 +37,3 @@ def generate_key():
     random.shuffle(password)
     return("".join(password))
 
-print (generate_key())
-print (generate_key())
-print (generate_key())
-print (generate_key())
-print (generate_key())
