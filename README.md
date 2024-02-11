@@ -1,7 +1,7 @@
 ![banner](cyb.png)
 
 <h2 style='color:rgb(167, 22, 102)'> Random Key Generator</h2>
-Random key generator used for One Time Passcode or to generate a random string.
+Random key generator used for One Time Passcode or to generate a random string password.
 
 ## Step 1
 Generate a random 9 character string using python random.choice from a list of characters generally required in a strong password.
