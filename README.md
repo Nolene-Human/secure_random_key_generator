@@ -9,9 +9,7 @@ Generate a random 9 character string using python random.choice from a list of c
 ## Step 2
 Code Test
 
-Run code to see if any random password is generated more then once and test the randomness frequency test:
-This function will return a value between 0 and 1. The closer the result is to 0, the more likely the sequence is to be random (according to the frequency test).
-'''def frequency_test(sequence)'''
+Run code to see if any random password is generated more then once and test the randomness frequency test
 
 ## Step 3
 Scan Vulnerabilies using SNYK
