@@ -1,0 +1,15 @@
+# Flask html page to generate a random key and display it
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Key Generator</title>
+  </head>
+  <body>
+    <h1>Random Key Generator</h1>
+    <p>Click the button to generate a random key</p>
+    <form action="/generate" method="post">
+      <input type="submit" value="Generate Key">
+    </form>
+    <p>{{ key }}</p>
+  </body>
